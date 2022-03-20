@@ -24,3 +24,4 @@ mutation {
 addGlobal 
 }
 ```
+- Now run the covid-tracker-client 🎊
