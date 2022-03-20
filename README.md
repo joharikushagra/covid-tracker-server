@@ -12,3 +12,15 @@ PORT = 4000
 npm install
 npm start
 ```
+- Open http:localhost:4000 in your browser
+- Write the following gql queries to populate values in DB
+```
+mutation {
+addCountries
+}
+```
+```
+mutation {
+addGlobal 
+}
+```
