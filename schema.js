@@ -31,7 +31,7 @@ exports.typeDefs = gql`
     Premium: String
   }
   type Mutation {
-    addCountries: [Countries]!
-    addGlobal: Global!
+    addCountries: String
+    addGlobal: String
   }
 `;

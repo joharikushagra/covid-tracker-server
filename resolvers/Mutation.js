@@ -13,7 +13,7 @@ exports.Mutation = {
     const countryInDB = Country.insertMany(data.Countries)
       .then(() => console.log("docs saved successfully"))
       .catch((err) => console.log(err));
-    await countryInDB.save();
+    return "Countries Data Added"
   },
   addGlobal: async () => {
     mongoose.connection.collections["globals"].drop(() =>
@@ -24,6 +24,6 @@ exports.Mutation = {
     const globalInDB = Global.create(data.Global)
       .then(() => console.log("doc saved successfully"))
       .catch((err) => console.log(err));
-    await globalInDB.save();
+    return "Global Data Added"
   },
 };
